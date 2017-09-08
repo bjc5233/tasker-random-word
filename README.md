@@ -12,5 +12,7 @@
 
 ## 预览
 <div align=center><img height="960" width="540" src="https://github.com/bjc5233/tasker-random-word/raw/master/resources/Screenshot_2017-09-08-12-52-37-924.png"/></div>
+<br><br>
 <div align=center><img height="960" width="540" src="https://github.com/bjc5233/tasker-random-word/raw/master/resources/Screenshot_2017-09-08-12-52-47-550.png"/></div>
+<br><br>
 <div align=center><img height="960" width="540" src="https://github.com/bjc5233/tasker-random-word/raw/master/resources/Screenshot_2017-09-08-12-52-56-490.png"/></div>
