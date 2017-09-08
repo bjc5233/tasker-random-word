@@ -4,11 +4,20 @@
 		<cdate>1504792055372</cdate>
 		<name>word</name>
 		<scenes>word</scenes>
-		<tids>130,114,126,124,123</tids>
+		<tids>130,124,114,123,126</tids>
+		<Kid sr="Kid">
+			<launchID>114</launchID>
+			<pkg>com.bjc.word</pkg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
+		<Img sr="icon" ve="2">
+			<nme>hd_aaa_conv_a</nme>
+		</Img>
 	</Project>
 	<Scene sr="sceneword">
 		<cdate>1504006228201</cdate>
-		<edate>1504846194218</edate>
+		<edate>1504865203290</edate>
 		<heightLand>-1</heightLand>
 		<heightPort>850</heightPort>
 		<nme>word</nme>
@@ -34,7 +43,7 @@
 				<Str sr="arg3" ve="3"/>
 				<Int sr="arg4" val="0"/>
 				<Str sr="arg5" ve="3">#FF000000</Str>
-				<Int sr="arg6" val="10"/>
+				<Int sr="arg6" val="0"/>
 				<Int sr="arg7" val="0"/>
 			</RectElement>
 		</WebElement>
@@ -171,7 +180,7 @@
 	</Scene>
 	<Task sr="task114">
 		<cdate>1504118499058</cdate>
-		<edate>1504847213255</edate>
+		<edate>1504865125696</edate>
 		<id>114</id>
 		<nme>word</nme>
 		<pri>7</pri>
@@ -184,16 +193,34 @@
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>12</op>
-					<rhs></rhs>
-				</Condition>
-			</ConditionList>
+			<code>547</code>
+			<Str sr="arg0" ve="3">%word_sound_path</Str>
+			<Str sr="arg1" ve="3">%word_root_path/sound/sound3.wav</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act10" ve="7">
+			<code>118</code>
+			<Str sr="arg0" ve="3">openapi.youdao.com</Str>
+			<Str sr="arg1" ve="3">%word_url</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="5"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%word_json</Str>
+			<Str sr="arg1" ve="3">%HTTPD</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -203,20 +230,20 @@
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act11" ve="7">
+		<Action sr="act13" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">很抱歉，找不到该单词！</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act14" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
 			<Str sr="arg1" ve="3">word</Str>
 		</Action>
-		<Action sr="act13" ve="7">
+		<Action sr="act15" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act14" ve="7">
+		<Action sr="act16" ve="7">
 			<code>129</code>
 			<label>构建单词显示界面html</label>
 			<Str sr="arg0" ve="3">var wordObj = JSON.parse(word_json);
@@ -245,7 +272,7 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="45"/>
 		</Action>
-		<Action sr="act15" ve="7">
+		<Action sr="act17" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%word_html_path</Str>
 			<Str sr="arg1" ve="3">%word_root_path/word.html</Str>
@@ -253,21 +280,29 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act16" ve="7">
+		<Action sr="act18" ve="7">
 			<code>410</code>
 			<Str sr="arg0" ve="3">%word_html_path</Str>
 			<Str sr="arg1" ve="3">%word_html</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act17" ve="7">
+		<Action sr="act19" ve="7">
 			<code>194</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">word</Str>
 			<Int sr="arg1" val="0"/>
 			<Str sr="arg2" ve="3">%is_word_scene_exist</Str>
 		</Action>
-		<Action sr="act18" ve="7">
+		<Action sr="act2" ve="7">
+			<code>445</code>
+			<Str sr="arg0" ve="3">%word_sound_path</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act20" ve="7">
 			<code>47</code>
 			<Str sr="arg0" ve="3">word</Str>
 			<Int sr="arg1" val="7"/>
@@ -291,7 +326,7 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act19" ve="7">
+		<Action sr="act21" ve="7">
 			<code>53</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">word</Str>
@@ -299,7 +334,17 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 			<Int sr="arg2" val="11"/>
 			<Str sr="arg3" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%word</Str>
 			<Str sr="arg1" ve="3">%par1</Str>
@@ -307,26 +352,26 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act5" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act6" ve="7">
 			<code>545</code>
 			<Str sr="arg0" ve="3">%word_index</Str>
 			<Int sr="arg1" val="1"/>
 			<Int sr="arg2" val="3786"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act7" ve="7">
 			<code>415</code>
 			<label>获取随机单词</label>
 			<Str sr="arg0" ve="3">%word_root_path/cet6.txt</Str>
 			<Str sr="arg1" ve="3">%word_index</Str>
 			<Str sr="arg2" ve="3">%word</Str>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act8" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act9" ve="7">
 			<code>129</code>
 			<label>构建查询URL</label>
 			<Str sr="arg0" ve="3">var appKey = "2e92d7586dc7352a";
@@ -337,29 +382,9 @@ var hexcase = 1;
 var word_sign = hex_md5(appKey + word + salt + secretKey);
 var word_encode = encodeURI(word);
 var word_url = "/api?q=" + word_encode + "&amp;from=en&amp;to=zh_CHS&amp;appKey=" + appKey + "&amp;salt=" + salt + "&amp;sign=" + word_sign;</Str>
-			<Str sr="arg1" ve="3">/storage/sdcard1/software_me/systemWallpaper/word/md5.min.js</Str>
+			<Str sr="arg1" ve="3">%word_root_path/md5.min.js</Str>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="45"/>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>118</code>
-			<Str sr="arg0" ve="3">openapi.youdao.com</Str>
-			<Str sr="arg1" ve="3">%word_url</Str>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="5"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%word_json</Str>
-			<Str sr="arg1" ve="3">%HTTPD</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
 		</Action>
 		<Img sr="icn" ve="2">
 			<nme>hd_aaa_conv_a</nme>
@@ -371,6 +396,14 @@ var word_url = "/api?q=" + word_encode + "&amp;from=en&amp;to=zh_CHS&amp;appKey=
 		<id>123</id>
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
+			<code>445</code>
+			<Str sr="arg0" ve="3">%word_sound_path</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>49</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">word</Str>
