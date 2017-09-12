@@ -9,6 +9,7 @@
 * 配置根路径[word_root_path]变量为自己的路径，并在路径中放入[cet6.txt]和[md5.min.js]
 * 配置按键音[word_sound_path]
 * 配置样式风格[word_style]，可选有[透明trans\随壁纸color]
+* [SOUND_ROUND_STYLE = color]需要[tasker-common](https://github.com/bjc5233/tasker-common)中的[tasker-comm-wallpaper-color]模块支持
 * 在桌面创建该任务的快捷方式
 * 点击弹出随机一个英语单词；[→]为下一个随机英语单词；[x]为退出；[请输入单词]可手动指定查询单词
 

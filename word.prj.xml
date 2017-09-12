@@ -4,7 +4,7 @@
 		<cdate>1504792055372</cdate>
 		<name>word</name>
 		<scenes>word</scenes>
-		<tids>113,115,114,112,111</tids>
+		<tids>113,112,115,111,114</tids>
 		<Kid sr="Kid">
 			<launchID>114</launchID>
 			<pkg>com.bjc.word</pkg>
@@ -17,7 +17,7 @@
 	</Project>
 	<Scene sr="sceneword">
 		<cdate>1504006228201</cdate>
-		<edate>1505149149230</edate>
+		<edate>1505204783785</edate>
 		<heightLand>-1</heightLand>
 		<heightPort>850</heightPort>
 		<nme>word</nme>
@@ -28,7 +28,7 @@
 			<geom>0,0,750,850,0,0,696,1192</geom>
 			<Str sr="arg0" ve="3">word</Str>
 			<Int sr="arg1" val="1"/>
-			<Str sr="arg2" ve="3">%word_root_path/word.html</Str>
+			<Str sr="arg2" ve="3">%root_path/word.html</Str>
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="1"/>
 			<Int sr="arg5" val="0"/>
@@ -330,15 +330,15 @@
 	</Task>
 	<Task sr="task115">
 		<cdate>1504118499058</cdate>
-		<edate>1505149126969</edate>
+		<edate>1505204771981</edate>
 		<id>115</id>
 		<nme>word</nme>
 		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>配置根路径</label>
-			<Str sr="arg0" ve="3">%word_root_path</Str>
-			<Str sr="arg1" ve="3">/storage/sdcard1/software_me/systemWallpaper/word</Str>
+			<Str sr="arg0" ve="3">%root_path</Str>
+			<Str sr="arg1" ve="3">/storage/sdcard1/software_me/tasker/word</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -347,7 +347,7 @@
 			<code>547</code>
 			<label>配置按键音</label>
 			<Str sr="arg0" ve="3">%word_sound_path</Str>
-			<Str sr="arg1" ve="3">%word_root_path/sound/sound3.wav</Str>
+			<Str sr="arg1" ve="3">%root_path/sound/sound3.wav</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -355,7 +355,7 @@
 		<Action sr="act10" ve="7">
 			<code>415</code>
 			<label>获取随机单词</label>
-			<Str sr="arg0" ve="3">%word_root_path/cet6.txt</Str>
+			<Str sr="arg0" ve="3">%root_path/cet6.txt</Str>
 			<Str sr="arg1" ve="3">%word_index</Str>
 			<Str sr="arg2" ve="3">%word</Str>
 		</Action>
@@ -373,7 +373,7 @@ var hexcase = 1;
 var word_sign = hex_md5(appKey + word + salt + secretKey);
 var word_encode = encodeURI(word);
 var word_url = "/api?q=" + word_encode + "&amp;from=en&amp;to=zh_CHS&amp;appKey=" + appKey + "&amp;salt=" + salt + "&amp;sign=" + word_sign;</Str>
-			<Str sr="arg1" ve="3">%word_root_path/md5.min.js</Str>
+			<Str sr="arg1" ve="3">%root_path/md5.min.js</Str>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="45"/>
 		</Action>
@@ -460,7 +460,7 @@ word_html += "&lt;/ul&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;";</Str>
 		</Action>
 		<Action sr="act20" ve="7">
 			<code>410</code>
-			<Str sr="arg0" ve="3">%word_root_path/word.html</Str>
+			<Str sr="arg0" ve="3">%root_path/word.html</Str>
 			<Str sr="arg1" ve="3">%word_html</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
